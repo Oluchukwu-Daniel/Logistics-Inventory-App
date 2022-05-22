@@ -12864,14 +12864,7 @@ hr.transparent {
   width: 40px;
 }
 
-.table { 
-  counter-reset: serial-number; /* Set the serial number counter to 0 */
-}
 
-.table tr td:first-child:before {
-  counter-increment: serial-number; /* Increment the serial number counter */
-  content: counter(serial-number); /* Display the counter */
-}
 
 
 

@@ -51,7 +51,6 @@
               <table class="table table-striped table-bordered datatable" id="myTable">
                 <thead>
                   <tr>
-                    <th>#</th>
                     <th>Name</th>
                     <th>Wei-ght</th>
                     <th>Col-our</th>
@@ -64,13 +63,13 @@
                     <th>Pick-Date</th>
                     <th>Del.-Date</th>
                     <th>Image</th>
+                    <th>Reason for deletion</th>
                     <th>Action</th>
                   </tr>
                 </thead>
                 <tbody>
                   @foreach($inventory as $inventory)
                   <tr>
-                    <td></td>
                     <td>{{$inventory["name"]}}</td>
                     <td>{{$inventory["weight"]}}</td>
                     <td>{{$inventory["colour"]}}</td>
@@ -83,6 +82,7 @@
                     <td>{{$inventory["pickup_date"]}}</td>
                     <td>{{$inventory["delivery_date"]}}</td>
                     <td><img class= "myimgs" src="/storage/{{$inventory["image"]}}"/></td>
+                    <td></td>
                     <td>
                       <a class="btn btn-info" href="/undelete/{{$inventory['id']}}">
                         <i class="fa fa-undo "></i>
