@@ -63,7 +63,7 @@
                     <th>Pick-Date</th>
                     <th>Del.-Date</th>
                     <th>Image</th>
-                    <th>Reason for deletion</th>
+                    {{-- <th>Reason for deletion</th> --}}
                     <th>Action</th>
                   </tr>
                 </thead>
@@ -82,7 +82,7 @@
                     <td>{{$inventory["pickup_date"]}}</td>
                     <td>{{$inventory["delivery_date"]}}</td>
                     <td><img class= "myimgs" src="/storage/{{$inventory["image"]}}"/></td>
-                    <td></td>
+                    {{-- <td></td> --}}
                     <td>
                       <a class="btn btn-info" href="/undelete/{{$inventory['id']}}">
                         <i class="fa fa-undo "></i>
